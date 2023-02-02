@@ -13,11 +13,11 @@ public://member functions
     Book();//default constructor
     Book(std::string title1,std::string author1,int pagecount1, bool available1);//constructor with all 4 mem
     Book(std::string title1,std::string author1,int pagecount1);//constructor with 3 
-    void setTitle(std::string);//setter
+    void setTitle(const std::string);//setter
     std::string getTitle()const;//getter
-    void setAuthor(std::string);//setter
+    void setAuthor(const std::string);//setter
     std::string getAuthor()const;//getter
-    void setPageCount(int);//setter
+    void setPageCount(const int);//setter
     int getPageCount()const;//getter
     void setDigital();//setter
     bool isDigital()const;//getter
