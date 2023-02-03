@@ -1,8 +1,8 @@
 #include <iostream>
 #include "Book.hpp"
-Book::Book()//default constructor
+Book::Book():pagecount{0}  //default constructor
 {
-    pagecount=0;//default pagecount is 0
+    //pagecount=0;//default pagecount is 0
     available=false;//default digital availability is false
 }
 Book::Book(std::string title1,std::string author1,int pagecount1)//constructor if they don't provide digital availability
