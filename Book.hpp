@@ -8,7 +8,7 @@ private://members
     std::string title;//title of book       
     std::string author;//author of book
     int pagecount;//pagecount of book
-    bool available=false;//digital availability of book
+    bool available;//digital availability of book
 public://member functions
     Book();//default constructor
     Book(std::string title1,std::string author1,int pagecount1, bool available1);//constructor with all 4 mem
