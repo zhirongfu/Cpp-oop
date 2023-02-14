@@ -1,11 +1,11 @@
 #include "Novel.hpp"
 #include <iostream>
 #include <vector>
-Novel::Novel():Book{},averagerating{0},filmadaptation{0}
+Novel::Novel():Book{},averagerating{0},filmadaptation{false}
 {
 
 }
-Novel::Novel(std::string title1,std::string author1,int pagecount1,bool available1,std::string genre1,bool filmadaptation1)
+Novel::Novel(std::string title1,std::string author1,int pagecount1,std::string genre1,bool available1,bool filmadaptation1)
 :Book{title1,author1,pagecount1,available1},genre{genre1},filmadaptation{filmadaptation1}
 {
 

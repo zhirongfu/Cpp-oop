@@ -18,7 +18,7 @@ private:
     bool filmadaptation;
 public:
     Novel();
-    Novel(std::string title1,std::string author1,int pagecount1, bool available1,std::string genre1,bool filmadaptation1);
+    Novel(std::string title1,std::string author1,int pagecount1,std::string genre1,bool available1=false,bool filmadaptation1=false);
     std::string getGenre();
     void setGenre(std::string);
     std::vector<std::string> getCharacterList();

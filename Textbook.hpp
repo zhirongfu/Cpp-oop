@@ -12,7 +12,7 @@ private:
     bool reviewquestions;
 public:
     Textbook();
-    Textbook(std::string title1,std::string author1,int pagecount1, bool available1,std::string subject1,grade_level gradelevel1,bool reviewquestions1);
+    Textbook(std::string title1,std::string author1,int pagecount1,std::string subject1,bool available1=false,grade_level gradelevel1=NONE,bool reviewquestions1=false);
     void setSubject(std::string);
     std::string getSubject();
     void setGradeLevel(grade_level);

@@ -1,10 +1,10 @@
 #include "Textbook.hpp"
 #include <iostream>
-Textbook::Textbook():Book{},reviewquestions{0},gradelevel{NONE}
+Textbook::Textbook():Book{},reviewquestions{false},gradelevel{NONE}
 {
 
 }
-Textbook::Textbook(std::string title1,std::string author1,int pagecount1, bool available1,std::string subject1,grade_level gradelevel1,bool reviewquestions1)
+Textbook::Textbook(std::string title1,std::string author1,int pagecount1,std::string subject1,bool available1,grade_level gradelevel1,bool reviewquestions1)
 :Book{title1,author1,pagecount1,available1},subject{subject1},gradelevel{gradelevel1},reviewquestions{reviewquestions1}
 {
 

@@ -11,8 +11,7 @@ private://members
     bool available;//digital availability of book
 public://member functions
     Book();//default constructor
-    Book(std::string title1,std::string author1,int pagecount1, bool available1);//constructor with all 4 mem
-    Book(std::string title1,std::string author1,int pagecount1);//constructor with 3 mem
+    Book(std::string title1,std::string author1,int pagecount1, bool available1=false);//constructor with all 4 mem
     void setTitle(const std::string);//sets title of book   
     std::string getTitle()const;//returns title of book
     void setAuthor(const std::string);//sets author of book 
