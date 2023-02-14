@@ -12,7 +12,7 @@ private:
     bool website;
 public:
 Manual();
-Manual(std::string title1,std::string author1,int pagecount1, bool available1,std::string nameofdevice1,std::string url,bool visualaid1);
+Manual(std::string title1,std::string author1,int pagecount1,std::string nameofdevice1, bool available1=false,std::string url="",bool visualaid1=0);
 void setDevice(std::string);
 std::string getDevice();
 void setWebsite(std::string);

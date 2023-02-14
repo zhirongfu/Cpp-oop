@@ -5,13 +5,6 @@ Book::Book():pagecount{0}  //default constructor
     //pagecount=0;//default pagecount is 0
     available=false;//default digital availability is false
 }
-Book::Book(std::string title1,std::string author1,int pagecount1)//constructor if they don't provide digital availability
-{
-    title=title1;
-    author=author1;
-    pagecount=pagecount1;
-    available=false;
-}
 Book::Book(std::string title1,std::string author1,int pagecount1, bool available1)//constructor if everything is provided
 {
     title=title1;

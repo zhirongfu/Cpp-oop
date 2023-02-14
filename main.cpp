@@ -16,7 +16,7 @@ int main()
     std::cout<<my_manual.getPageCount()<<std::endl;
     std::cout<<my_manual.isDigital()<<std::endl;
     std::cout<<my_manual.hasWebsite()<<std::endl;
-    Manual my_manual1("joes book","joe",232,1,"phone","-url-is-valid-or-not-using-regular-expression/",1);
+    Manual my_manual1("joes book","joe",232,"phone",1);
     std::cout<<my_manual1.getDevice()<<std::endl;
     std::cout<<my_manual1.getWebsite()<<std::endl;
     std::cout<<my_manual1.hasVisualAid()<<std::endl;
