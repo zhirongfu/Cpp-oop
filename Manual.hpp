@@ -3,6 +3,7 @@
 #define MANUAL_H
 #include "Book.hpp"
 #include <iostream>
+#include <string>
 class Manual:public Book
 {
 private:

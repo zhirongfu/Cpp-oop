@@ -1,7 +1,7 @@
 #include <iostream>
 #include "Manual.hpp"
 #include <regex>
-Manual::Manual():Book(),visualaid{false},website{false}
+Manual::Manual():Book(),url{""},nameofdevice{""},visualaid{false},website{false}
 {
 
 }

@@ -1,6 +1,6 @@
 #include <iostream>
 #include "Book.hpp"
-Book::Book():title{},author{},pagecount{0},available{false}  //default constructor
+Book::Book():title{""},author{""},pagecount{0},available{false}  //default constructor
 {
     //pagecount=0;//default pagecount is 0
     //available=false;default digital availability is false
