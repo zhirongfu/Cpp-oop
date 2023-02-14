@@ -28,7 +28,7 @@ std::string Manual::getDevice()
 {
     return nameofdevice;
 }
-void Manual::setWebsite(std::string url1)
+bool Manual::setWebsite(std::string url1)
 {
 const std::regex pattern("((http|https)://)(www.)?[a-zA-Z0-9@:%._\\+~#?&//=]{2,256}\\.[a-z]{2,6}\\b([-a-zA-Z0-9@:%._\\+~#?&//=]*)");
 if(regex_match(url1, pattern))
@@ -40,6 +40,7 @@ else
     url="Broken Link";
 }
 website=true;
+return website;
 }
 std::string Manual::getWebsite()
 {
