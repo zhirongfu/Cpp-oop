@@ -33,7 +33,7 @@ Manual();
                 If the URL is ill-formatted, the website is set to
                 empty string and the website flag is set to False.
 */
-Manual(std::string title1,std::string author1,int pagecount1,std::string nameofdevice1, bool available1=false,std::string url="",bool visualaid1=false);
+Manual(std::string title1,std::string author1,int pagecount1,std::string nameofdevice1, bool available1=false,std::string url1="",bool visualaid1=false);
 void setDevice(std::string);
 std::string getDevice();
 bool setWebsite(std::string);
