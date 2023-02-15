@@ -1,6 +1,7 @@
+#include "Book.hpp"
 #include "Textbook.hpp"
 #include <iostream>
-Textbook::Textbook():Book{},reviewquestions{false},gradelevel{NONE}
+Textbook::Textbook():reviewquestions{false},gradelevel{NONE},subject{""}
 {
 
 }
@@ -46,7 +47,7 @@ std::string Textbook::getGradeLevel()
 }
 void Textbook::setReviewQuestions()
 {
-    reviewquestions=1;
+    reviewquestions=true;
 }
 bool Textbook::checkReviewQuestions()
 {

@@ -1,7 +1,7 @@
 #include "Novel.hpp"
 #include <iostream>
 #include <vector>
-Novel::Novel():Book{},averagerating{0},filmadaptation{false}
+Novel::Novel():genre{""},characterlist{""},averagerating{0},filmadaptation{false}
 {
 
 }
@@ -49,7 +49,7 @@ double Novel::getAverageRating()
 }
 review Novel::createReview(double score1,std::string rating1)
 {
-struct review myreview;
+review myreview;
 myreview.score_=score1;
 myreview.rating_=rating1;
 return myreview;
