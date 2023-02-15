@@ -3,8 +3,21 @@
 #include "Book.cpp"
 #include "Manual.hpp"
 #include "Manual.cpp"
+#include "Textbook.hpp"
+#include "Textbook.cpp"
 int main() 
 {
+    Textbook my_textbook; 
+    std::cout<<my_textbook.getSubject()<<std::endl;
+    my_textbook.setGradeLevel(JUNIOR_HIGH);
+    std::cout<<my_textbook.getGradeLevel()<<std::endl;
+    std::cout<<my_textbook.checkReviewQuestions()<<std::endl;
+    std::cout<<my_textbook.getTitle()<<std::endl;
+    std::cout<<my_textbook.getAuthor()<<std::endl;
+    std::cout<<my_textbook.isDigital()<<std::endl;
+    std::cout<<my_textbook.getPageCount()<<std::endl;  
+}
+/**
     Manual my_manual;
     std::cout<<my_manual.getDevice()<<std::endl;
     std::cout<<my_manual.getWebsite()<<std::endl;
@@ -25,4 +38,4 @@ int main()
     std::cout<<my_manual1.getPageCount()<<std::endl;
     std::cout<<my_manual1.isDigital()<<std::endl;
     return 0;
-}
+/***/

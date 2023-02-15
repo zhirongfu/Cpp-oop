@@ -3,7 +3,7 @@
 #define TEXTBOOK_H
 #include "Book.hpp"
 #include <iostream>
-enum grade_level{NONE,  ELEMENTARY, JUNIOR_HIGH, HIGH_SCHOOL, COLLEGE};
+enum grade_level{NONE=0,  ELEMENTARY, JUNIOR_HIGH, HIGH_SCHOOL, COLLEGE};
 class Textbook:public Book
 {
 private:

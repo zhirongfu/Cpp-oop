@@ -1,7 +1,7 @@
 #include "Book.hpp"
 #include "Textbook.hpp"
 #include <iostream>
-Textbook::Textbook():reviewquestions{false},gradelevel{NONE},subject{""}
+Textbook::Textbook():gradelevel{NONE},reviewquestions{false},subject{""}
 {
 
 }
@@ -24,23 +24,23 @@ void Textbook::setGradeLevel(grade_level gradelevel1)
 }
 std::string Textbook::getGradeLevel()
 {
-    if (gradelevel=NONE)
+    if (gradelevel==NONE)
     {
         return "NONE";
     }
-    if (gradelevel=ELEMENTARY)
+    if (gradelevel==ELEMENTARY)
     {
         return "ELEMENTARY";
     }
-    if (gradelevel=JUNIOR_HIGH)
+    if (gradelevel==JUNIOR_HIGH)
     {
         return "JUNIOR HIGH";
     }
-    if (gradelevel=HIGH_SCHOOL)
+    if (gradelevel==HIGH_SCHOOL)
     {
         return "HIGH SCHOOL";
     }
-    if (gradelevel=COLLEGE)
+    if (gradelevel==COLLEGE)
     {
         return "COLLEGE";
     }
