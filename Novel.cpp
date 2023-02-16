@@ -50,9 +50,12 @@ double Novel::getAverageRating()
 review Novel::createReview(double score1,std::string rating1)
 {
 review myreview;
+if(score1>=0)
+{
 myreview.score_=score1;
 myreview.rating_=rating1;
-return myreview;
+return myreview;    
+}
 }
 void Novel::addReview(review areview)
 {
@@ -60,7 +63,7 @@ void Novel::addReview(review areview)
 }
 void Novel::calculateAverageRating()
 {
-    int avg=0;
+    double avg=0;
     for(int i=0;i<reviews.size();i++)
     {
         avg+=reviews[i].score_;
