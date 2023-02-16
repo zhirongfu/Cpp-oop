@@ -5,9 +5,23 @@
 #include "Manual.cpp"
 #include "Textbook.hpp"
 #include "Textbook.cpp"
+#include "Novel.hpp"
+#include "Novel.cpp"
 int main() 
 {
-    Textbook my_textbook; 
+    Novel my_novel;
+    my_novel.getGenre();
+    my_novel.addCharacter("Hello World");
+    my_novel.addCharacter("joe");
+    my_novel.addCharacter("mama");
+    my_novel.addCharacter("pizza");
+    //std::cout<<my_novel.getCharacterList();
+    std::cout<<my_novel.getCharacterListString();
+
+
+}
+/**
+ * Textbook my_textbook; 
     std::cout<<my_textbook.getSubject()<<std::endl;
     my_textbook.setGradeLevel(JUNIOR_HIGH);
     std::cout<<my_textbook.getGradeLevel()<<std::endl;
@@ -16,8 +30,6 @@ int main()
     std::cout<<my_textbook.getAuthor()<<std::endl;
     std::cout<<my_textbook.isDigital()<<std::endl;
     std::cout<<my_textbook.getPageCount()<<std::endl;  
-}
-/**
     Manual my_manual;
     std::cout<<my_manual.getDevice()<<std::endl;
     std::cout<<my_manual.getWebsite()<<std::endl;

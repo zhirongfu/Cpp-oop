@@ -27,7 +27,7 @@ std::string Novel::getCharacterListString()
     std::string fulllist="";
     for(int i=0;i<characterlist.size();i++)
     {
-        fulllist+=(characterlist[i]+" ");
+        fulllist+=(characterlist[i]);        
     }
     return fulllist;
 }
