@@ -1,7 +1,7 @@
 #include "Novel.hpp"
 #include <iostream>
 #include <vector>
-Novel::Novel():genre{""},characterlist{""},averagerating{0},filmadaptation{false}
+Novel::Novel():genre{""},averagerating{0},filmadaptation{false}
 {
 
 }
@@ -27,7 +27,7 @@ std::string Novel::getCharacterListString()
     std::string fulllist="";
     for(int i=0;i<characterlist.size();i++)
     {
-        fulllist+=(characterlist[i]);        
+        fulllist+=(characterlist.at(i)+" ");        
     }
     return fulllist;
 }

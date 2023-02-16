@@ -7,20 +7,29 @@
 #include "Textbook.cpp"
 #include "Novel.hpp"
 #include "Novel.cpp"
-int main() 
-{
+
+ int main(){
     Novel my_novel;
     my_novel.getGenre();
-    my_novel.addCharacter("Hello World");
+    my_novel.addCharacter("Hello World!");
     my_novel.addCharacter("joe");
     my_novel.addCharacter("mama");
     my_novel.addCharacter("pizza");
     //std::cout<<my_novel.getCharacterList();
     std::cout<<my_novel.getCharacterListString();
-
-
-}
+    my_novel.createReview(9.5,"good");
+    my_novel.addReview(my_novel.createReview(9.5,"good"));
+    my_novel.addReview(my_novel.createReview(9.2,"ok"));
+    my_novel.addReview(my_novel.createReview(5.2,"bad"));
+    my_novel.addReview(my_novel.createReview(4.5,"bad"));
+    my_novel.calculateAverageRating();
+    std::cout<<my_novel.getAverageRating();  
+ }
 /**
+ * 
+ 
+
+    }
  * Textbook my_textbook; 
     std::cout<<my_textbook.getSubject()<<std::endl;
     my_textbook.setGradeLevel(JUNIOR_HIGH);
