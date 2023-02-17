@@ -14,7 +14,7 @@ void Textbook::setSubject(std::string subject1)
 {
     subject=subject1;
 }
-std::string Textbook::getSubject()
+std::string Textbook::getSubject()const
 {
     return subject;
 }
@@ -22,7 +22,7 @@ void Textbook::setGradeLevel(grade_level gradelevel1)
 {
     gradelevel=gradelevel1;
 }
-std::string Textbook::getGradeLevel()
+std::string Textbook::getGradeLevel()const
 {
     if (gradelevel==NONE)
     {
@@ -49,7 +49,7 @@ void Textbook::setReviewQuestions()
 {
     reviewquestions=true;
 }
-bool Textbook::checkReviewQuestions()
+bool Textbook::checkReviewQuestions()const
 {
     return reviewquestions;
 }

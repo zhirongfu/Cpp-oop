@@ -13,11 +13,11 @@ private:
 public:
     Textbook();
     Textbook(std::string title1,std::string author1,int pagecount1,std::string subject1,bool available1=false,grade_level gradelevel1=NONE,bool reviewquestions1=false);
-    void setSubject(std::string);
-    std::string getSubject();
-    void setGradeLevel(grade_level);
-    std::string getGradeLevel();
+    void setSubject(const std::string);
+    std::string getSubject()const;
+    void setGradeLevel(const grade_level);
+    std::string getGradeLevel()const;
     void setReviewQuestions();
-    bool checkReviewQuestions(); 
+    bool checkReviewQuestions()const; 
 };
 #endif

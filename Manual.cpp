@@ -25,7 +25,7 @@ void Manual::setDevice(std::string device1)
 {
 nameofdevice=device1;
 }
-std::string Manual::getDevice()
+std::string Manual::getDevice()const
 {
     return nameofdevice;
 }
@@ -43,7 +43,7 @@ else
 website=true;
 return website;
 }
-std::string Manual::getWebsite()
+std::string Manual::getWebsite()const
 {
     return url;
 }
@@ -51,11 +51,11 @@ void Manual::setVisualAid(bool truefalse)
 {
     visualaid=truefalse;
 }
-bool Manual::hasVisualAid()
+bool Manual::hasVisualAid()const
 {
     return visualaid;
 }
-bool Manual::hasWebsite()
+bool Manual::hasWebsite()const
 {
     return website;
 }

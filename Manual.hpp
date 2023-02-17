@@ -35,13 +35,13 @@ Manual();
                 empty string and the website flag is set to False.
 */
 Manual(std::string title1,std::string author1,int pagecount1,std::string nameofdevice1, bool available1=false,std::string url1="",bool visualaid1=false);
-void setDevice(std::string);
-std::string getDevice();
-bool setWebsite(std::string);
-std::string getWebsite();
-void setVisualAid(bool);
-bool hasVisualAid();
-bool hasWebsite();
+void setDevice(const std::string);
+std::string getDevice()const;
+bool setWebsite(const std::string);
+std::string getWebsite()const;
+void setVisualAid(const bool);
+bool hasVisualAid()const;
+bool hasWebsite()const;
 };
 #endif
 

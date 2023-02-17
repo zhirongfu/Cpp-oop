@@ -10,19 +10,19 @@ Novel::Novel(std::string title1,std::string author1,int pagecount1,std::string g
 {
 
 }
-std::string Novel::getGenre()
+std::string Novel::getGenre()const
 {
     return genre;
 }
-void Novel::setGenre(std::string genre1)
+void Novel::setGenre( std::string genre1)
 {
     genre=genre1;
 }
-std::vector<std::string> Novel::getCharacterList()
+std::vector<std::string> Novel::getCharacterList()const
 {
     return characterlist;
 }
-std::string Novel::getCharacterListString()
+std::string Novel::getCharacterListString()const
 {
     std::string fulllist="";
     for(int i=0;i<characterlist.size();i++)
@@ -35,7 +35,7 @@ void Novel::addCharacter(std::string addedchar)
 {
     characterlist.push_back(addedchar);
 }
-bool Novel::hasFilmAdaptation()
+bool Novel::hasFilmAdaptation()const
 {
     return filmadaptation;
 }
@@ -43,11 +43,11 @@ void Novel::setFilmAdaptation()
 {
     filmadaptation=1;
 }
-double Novel::getAverageRating()
+double Novel::getAverageRating()const
 {
     return averagerating;
 }
-review Novel::createReview(double score1,std::string rating1)
+review Novel::createReview(double score1,std::string rating1)const
 {
 review myreview;
 if(score1>=0)
