@@ -6,13 +6,13 @@
 #include <string>
 class Manual:public Book
 {
-private:
-    std::string url;
-    std::string nameofdevice;
-    bool visualaid;
-    bool website;
+private://private data members
+    std::string url;//url of website
+    std::string nameofdevice;//name of device
+    bool visualaid;//flag for if manual has visual adi
+    bool website;//flag for if manual has website
 public:
-Manual();
+Manual();//default constructor
 /**
   Parameterized constructor.
   @param     : The title of the book (a string)
@@ -34,14 +34,14 @@ Manual();
                 If the URL is ill-formatted, the website is set to
                 empty string and the website flag is set to False.
 */
-Manual(std::string title1,std::string author1,int pagecount1,std::string nameofdevice1, bool available1=false,std::string url1="",bool visualaid1=false);
-void setDevice(const std::string);
-std::string getDevice()const;
-bool setWebsite(const std::string);
-std::string getWebsite()const;
-void setVisualAid(const bool);
-bool hasVisualAid()const;
-bool hasWebsite()const;
+Manual(std::string title1,std::string author1,int pagecount1,std::string nameofdevice1, bool available1=false,std::string url1="",bool visualaid1=false);//param constructor
+void setDevice(const std::string);//sets device used
+std::string getDevice()const;//returns device used
+bool setWebsite(const std::string);//sets url as website
+std::string getWebsite()const;//returns url
+void setVisualAid(const bool);//sets visual flag to param
+bool hasVisualAid()const;//returns flag for visual aid
+bool hasWebsite()const;//returns flag for website
 };
 #endif
 
