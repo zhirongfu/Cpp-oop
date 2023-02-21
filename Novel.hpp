@@ -27,7 +27,7 @@ public:
     bool hasFilmAdaptation()const;//if film has film adapt
     void setFilmAdaptation();//sets film adapt to true
     double getAverageRating()const;//returns avg rating
-    review createReview(const double&score1,const std::string rating1)const;//creates new review
+    review createReview(const double&score1,const std::string rating1);//creates new review
     void addReview(const review);//adds review to vector
     void calculateAverageRating();//calculates avg rating of all reviews
 
