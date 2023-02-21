@@ -47,7 +47,7 @@ double Novel::getAverageRating()const//returns avg rating
 {
     return averagerating;
 }
-review Novel::createReview(double score1,std::string rating1)const//creates new review
+review Novel::createReview(const double& score1, std::string rating1)const//creates new review
 {
 review myreview;
 if(score1>=0)
@@ -57,7 +57,7 @@ myreview.rating_=rating1;
 return myreview;    
 }
 }
-void Novel::addReview(review areview)//adds review to vector
+void Novel::addReview(const review areview)//adds review to vector
 {
     reviews.push_back(areview);
 }
