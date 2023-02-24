@@ -1,3 +1,4 @@
+//Zhi Fu         zhi.fu57@myhunter.cuny.edu         2/18/23
 #pragma once
 #ifndef NOVEL_H
 #define NOVEL_H
@@ -20,15 +21,15 @@ public:
     Novel();//default constructor
     Novel(std::string title1,std::string author1,int pagecount1,std::string genre1,bool available1=false,bool filmadaptation1=false);//param constructor
     std::string getGenre()const;//returns genre of novel
-    void setGenre(const std::string);//sets genre
+    void setGenre(const std::string&);//sets genre
     std::vector<std::string> getCharacterList()const;//returns vecor of string for charcterlist
     std::string getCharacterListString()const;//returns the vector into string equal
-    void addCharacter(const std::string);//adds charcter
+    void addCharacter(const std::string&);//adds charcter
     bool hasFilmAdaptation()const;//if film has film adapt
     void setFilmAdaptation();//sets film adapt to true
     double getAverageRating()const;//returns avg rating
-    review createReview(const double&score1,const std::string rating1);//creates new review
-    void addReview(const review);//adds review to vector
+    review createReview(const double&score1,const std::string& rating1);//creates new review
+    void addReview(const review&);//adds review to vector
     void calculateAverageRating();//calculates avg rating of all reviews
 
 };

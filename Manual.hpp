@@ -1,3 +1,4 @@
+//Zhi Fu         zhi.fu57@myhunter.cuny.edu         2/18/23
 #pragma once
 #ifndef MANUAL_H
 #define MANUAL_H
@@ -35,9 +36,9 @@ Manual();//default constructor
                 empty string and the website flag is set to False.
 */
 Manual(std::string title1,std::string author1,int pagecount1,std::string nameofdevice1, bool available1=false,std::string url1="",bool visualaid1=false);//param constructor
-void setDevice(const std::string);//sets device used
+void setDevice(const std::string&);//sets device used
 std::string getDevice()const;//returns device used
-bool setWebsite(const std::string);//sets url as website
+bool setWebsite(const std::string&);//sets url as website
 std::string getWebsite()const;//returns url
 void setVisualAid(const bool);//sets visual flag to param
 bool hasVisualAid()const;//returns flag for visual aid

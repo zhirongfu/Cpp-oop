@@ -1,3 +1,4 @@
+//Zhi Fu         zhi.fu57@myhunter.cuny.edu         2/18/23
 #include <iostream>
 #include "Book.hpp"
 Book::Book():title{""},author{""},pagecount{0},available{false}  //default constructor

@@ -1,3 +1,4 @@
+//Zhi Fu         zhi.fu57@myhunter.cuny.edu         2/18/23
 #include "Novel.hpp"
 #include <iostream>
 #include <vector>
@@ -14,7 +15,7 @@ std::string Novel::getGenre()const//returns genre of novel
 {
     return genre;
 }
-void Novel::setGenre( std::string genre1)//sets genre of novel
+void Novel::setGenre(const std::string& genre1)//sets genre of novel
 {
     genre=genre1;
 }
@@ -31,7 +32,7 @@ std::string Novel::getCharacterListString()const//returns the vector into string
     }
     return fulllist;
 }
-void Novel::addCharacter(std::string addedchar)//adds charcter
+void Novel::addCharacter(const std::string& addedchar)//adds charcter
 {
     characterlist.push_back(addedchar);
 }
@@ -47,7 +48,7 @@ double Novel::getAverageRating()const//returns avg rating
 {
     return averagerating;
 }
-review Novel::createReview(const double& score1, std::string rating1)//creates new review
+review Novel::createReview(const double& score1, const std::string& rating1)//creates new review
 {
 review myreview;
 if(score1>=0)
@@ -57,7 +58,7 @@ myreview.rating_=rating1;
 return myreview;    
 }
 }
-void Novel::addReview(const review areview)//adds review to vector
+void Novel::addReview(const review& areview)//adds review to vector
 {
     reviews.push_back(areview);
 }

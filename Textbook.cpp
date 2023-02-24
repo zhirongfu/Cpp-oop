@@ -1,3 +1,4 @@
+//Zhi Fu         zhi.fu57@myhunter.cuny.edu         2/18/23
 #include "Book.hpp"
 #include "Textbook.hpp"
 #include <iostream>
@@ -10,7 +11,7 @@ Textbook::Textbook(std::string title1,std::string author1,int pagecount1,std::st
 {
 
 }
-void Textbook::setSubject(std::string subject1)//sets subject of tb
+void Textbook::setSubject(const std::string& subject1)//sets subject of tb
 {
     subject=subject1;
 }
@@ -18,7 +19,7 @@ std::string Textbook::getSubject()const//returns subject of tb
 {
     return subject;
 }
-void Textbook::setGradeLevel(grade_level gradelevel1)//sets gradelevel
+void Textbook::setGradeLevel(const grade_level& gradelevel1)//sets gradelevel
 {
     gradelevel=gradelevel1;
 }

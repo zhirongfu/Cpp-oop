@@ -1,3 +1,4 @@
+//Zhi Fu         zhi.fu57@myhunter.cuny.edu         2/18/23
 #include <iostream>
 #include "Manual.hpp"
 #include "Book.hpp"
@@ -21,7 +22,7 @@ else
     website=false;
 }
 }
-void Manual::setDevice(std::string device1)//sets device used
+void Manual::setDevice(const std::string& device1)//sets device used
 {
 nameofdevice=device1;
 }
@@ -29,7 +30,7 @@ std::string Manual::getDevice()const//returns device used
 {
     return nameofdevice;
 }
-bool Manual::setWebsite(std::string url1)//sets url as website
+bool Manual::setWebsite(const std::string& url1)//sets url as website
 {
 const std::regex pattern("((http|https)://)(www.)?[a-zA-Z0-9@:%._\\+~#?&//=]{2,256}\\.[a-z]{2,6}\\b([-a-zA-Z0-9@:%._\\+~#?&//=]*)");
 if(regex_match(url1, pattern))
