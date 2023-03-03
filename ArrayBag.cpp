@@ -129,26 +129,26 @@ int ArrayBag<ItemType>::getIndexOf(const ItemType& target) const
    return result;
 }  // end getIndexOf
 template<class ItemType>
-void ArrayBag<ItemType>::operator +=(ArrayBag arraybag2)
+void ArrayBag<ItemType>::operator +=(ArrayBag<ItemType> arraybag2)
 {
     if (arraybag2.item_count_!=0)
         {
-            for(int i=0,i<arraybag2.item_count_;i++)
+            for(int i=0;i<arraybag2.item_count_;i++)
                 {
-                    add(const arraybag2.items_[i]);
+                    add(arraybag2.items_[i]);
                 }
         }
 }
 template<class ItemType>
-void ArrayBag<ItemType>::operator /=(ArrayBag arraybag2)
+void ArrayBag<ItemType>::operator /=(ArrayBag<ItemType> arraybag2)
 {
     if (arraybag2.item_count_!=0)
         {
-            for(int i=0,i<arraybag2.item_count_;i++)
+            for(int i=0;i<arraybag2.item_count_;i++)
                 {
                     if(contains(arraybag2.items_[i])==false)
                         {
-                            add(const items_[i]);
+                            add(items_[i]);
                         }
                 }
         }

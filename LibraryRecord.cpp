@@ -3,7 +3,7 @@
 template <class ItemType>
 bool LibraryRecord<ItemType>::checkIn(Book book2) 
 {
-    return(add(book2));
+    return(ArrayBag<ItemType>add(book2));
 }
 template <class Itemtype>
 bool LibraryRecord<Itemtype>::checkOut(Book book2)
@@ -35,17 +35,17 @@ void LibraryRecord<Itemtype>::display()
     for(int i=0;i<items_.size();i++)
     {
         items_[i].display();
-        cout<<"It has been checked out "+std::to_string(getCheckOutHistory(items_[i]))+" times.\n";
+        std::cout<<"It has been checked out "+std::to_string(getCheckOutHistory(items_[i]))+" times.\n";
     }
 }
 template <class Itemtype>
 void LibraryRecord<Itemtype>::displayTitles()
 {
-    for(int i=0;i<(items_.size()-1);i++)
+    for(int i=0;i<(getCurrentSize()-1);i++)
     {
-        cout<<items_[i].getTitle()+", ";
+        std::cout<<items_[i].getTitle()+", ";
     }
-    cout<<items_[(items_.size()-1)]+"!\n";
+    std::cout<<items_[(items_.size()-1)]+"!\n";
 }
 template <class Itemtype>
 bool LibraryRecord<Itemtype>::duplicateStock()

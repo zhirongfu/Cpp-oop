@@ -61,7 +61,7 @@ bool Book::operator == (Book& book2)
 }
 bool Book::operator != (Book& book2)
 {
-    if(title==book2.getTitle()&&author==book2.getAuthor()&&pagecount==book2.getPageCount()&&available==book2.isDigital())
+    if(title==book2.title && author==book2.author && pagecount==book2.pagecount && available==book2.available)
         {
             return false;
         }

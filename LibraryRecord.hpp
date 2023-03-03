@@ -6,7 +6,7 @@
 #include <iostream>
 #include <vector>
 template <class ItemType>
-class LibraryRecord: public ArrayBag <ItemType>, Book
+class LibraryRecord: protected ArrayBag <ItemType>, Book
 {
 private:
     std::vector<Book> checkedout;

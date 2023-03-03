@@ -64,6 +64,5 @@ protected:
   int getIndexOf(const ItemType& target) const;
 
 }; // end ArrayBag
-
 #include "ArrayBag.cpp"
 #endif
