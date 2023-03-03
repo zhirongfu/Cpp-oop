@@ -5,8 +5,7 @@
 #include "ArrayBag.hpp"
 #include <iostream>
 #include <vector>
-template <class ItemType>
-class LibraryRecord: protected ArrayBag <ItemType>, Book
+class LibraryRecord: public ArrayBag <Book>
 {
 private:
     std::vector<Book> checkedout;
@@ -22,5 +21,4 @@ public:
     void operator +=(LibraryRecord);
     void operator /=(LibraryRecord);
 };
-#include "LibraryRecord.cpp"
 #endif
