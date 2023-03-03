@@ -21,6 +21,8 @@ public://member functions
     int getPageCount()const;//return page count of book
     void setDigital();//sets digital availability of book
     bool isDigital()const;//returns digital availability
-    
+    bool operator == (Book& book2);
+    bool operator != (Book& book2);
+    void display();
 };
 #endif

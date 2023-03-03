@@ -9,7 +9,13 @@
 #include "Novel.cpp"
 
  int main(){
-    Novel my_novel;
+   Book book1("moby dick","jason",236,true);
+   book1.display();
+     
+ }
+/**
+ * 
+  Novel my_novel;
     my_novel.getGenre();
     my_novel.addCharacter("Hello World!");
     my_novel.addCharacter("joe");
@@ -23,11 +29,7 @@
     my_novel.addReview(my_novel.createReview(5.2,"bad"));
     my_novel.addReview(my_novel.createReview(4.5,"bad"));
     my_novel.calculateAverageRating();
-    std::cout<<my_novel.getAverageRating();  
- }
-/**
- * 
- 
+    std::cout<<my_novel.getAverageRating();
 
     }
  * Textbook my_textbook; 

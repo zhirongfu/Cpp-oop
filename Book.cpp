@@ -48,4 +48,35 @@ bool Book::isDigital()const//returns availability
 {
     return available;
 }
+bool Book::operator == (Book& book2)
+{
+    if(title==book2.getTitle()&&author==book2.getAuthor()&&pagecount==book2.getPageCount()&&available==book2.isDigital())
+        {
+            return true;
+        }
+    else    
+        {
+            return false;
+        }
+}
+bool Book::operator != (Book& book2)
+{
+    if(title==book2.getTitle()&&author==book2.getAuthor()&&pagecount==book2.getPageCount()&&available==book2.isDigital())
+        {
+            return false;
+        }
+    else
+        {
+            return true;
+        }
+}
 
+void Book::display()
+{
+    std::string isit="It is not";
+    if(available==true)
+    {
+        isit="It is";
+    }
+    std::cout<<title+" is written by "+author+". Page Count: "+std::to_string(pagecount)+". "+isit+" available digitally.\n";
+}
